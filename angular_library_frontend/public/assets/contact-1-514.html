@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact — 1:514</title>
+  <meta name="viewport" content="width=1400, initial-scale=1">
+  <link rel="stylesheet" href="./common.css">
+  <link rel="stylesheet" href="./contact-1-514.css">
+  <!-- DM Sans for typography and FontAwesome for icons (fallback if system doesn't have it) -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="screen-wrapper">
+    <main class="canvas contact-screen" role="main" aria-label="Contact screen">
+      <!-- Background rectangle with opacity per style_9 over purple frame style_0 -->
+      <img class="abs bg-rect" src="./figmaimages/figma_image_1_515.png" alt="" style="left:0px; top:0px; width:1400px; height:770px;">
+
+      <!-- Title group -->
+      <section class="abs group-title" style="left:215px; top:150px; width:410px; height:208px;" aria-labelledby="contact-title">
+        <h1 id="contact-title" class="title-text">Let’s Keep in Touch</h1>
+        <p class="title-subtext">
+          We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.
+        </p>
+      </section>
+
+      <!-- Contacts list (Phone, Email, Address) -->
+      <section class="abs group-contacts" aria-label="Contact methods" style="left:216.5px; top:411.2px; width:283.5px; height:218px;">
+        <!-- Phone -->
+        <div class="contact-row" style="left:1.5px; top:0px; width:271px; height:38px;">
+          <span class="fa-icon" style="left:0px; top:0px; width:15px; height:38px;">&#xf095;</span>
+          <span class="contact-text" style="left:30px; top:6px; width:241px; height:26px;">+1 555 505 5050</span>
+        </div>
+        <!-- Email -->
+        <div class="contact-row" style="left:0px; top:70px; width:261.5px; height:38px;">
+          <span class="fa-icon" style="left:0px; top:0px; width:18px; height:38px;">&#xf0e0;</span>
+          <span class="contact-text" style="left:31.5px; top:6px; width:230px; height:26px;">info@designmodo.com</span>
+        </div>
+        <!-- Address -->
+        <div class="contact-address" style="left:1.5px; top:140px; width:282px; height:78px;">
+          <span class="fa-icon" style="left:-1.5px; top:0px; width:15px; height:38px;">&#xf0f7;</span>
+          <span class="address-text" style="left:29px; top:0px; width:252px; height:78px;">
+            San Francisco, CA560 Bush St &amp; 20th Ave, Apt5 San Francisco, 230909
+          </span>
+        </div>
+      </section>
+
+      <!-- Contact Form card -->
+      <section class="abs form-card" aria-label="Contact form" style="left:714px; top:100px; width:470px; height:570px;">
+        <!-- Placeholder card background per style_4 (white, radius 10) -->
+        <div class="form-bg"></div>
+
+        <!-- YOUR NAME label -->
+        <label class="field-label" style="left:50px; top:58px; width:100px; height:26px;">YOUR NAME</label>
+        <!-- First name input (Middle - Dark Outline instance) -->
+        <div class="input-outline" style="left:50px; top:90px; width:200px; height:50px;">
+          <input type="text" class="input-plain" aria-label="First name" placeholder="First name">
+        </div>
+
+        <!-- BUDGET label -->
+        <label class="field-label" style="left:280px; top:58px; width:68px; height:26px;">BUDGET</label>
+        <!-- Budget select-like input (uses provided image but we also overlay text for accessibility) -->
+        <div class="budget-outline" style="left:280px; top:90px; width:140px; height:50px;">
+          <img src="./figmaimages/figma_image_1_537_799_108.png" alt="" class="budget-bg">
+          <span class="budget-text">$500</span>
+          <span class="budget-carat" aria-hidden="true"></span>
+          <button class="budget-hit" aria-label="Open budget options" type="button"></button>
+        </div>
+
+        <!-- INPUT FIELD label above email -->
+        <label class="field-label" style="left:50px; top:172px; width:103px; height:26px;">INPUT FIELD</label>
+        <!-- Email field -->
+        <div class="input-outline full" style="left:50px; top:204px; width:370px; height:50px;">
+          <input type="email" class="input-plain" aria-label="Email address" placeholder="name@mail.com">
+        </div>
+
+        <!-- YOUR MESSAGE label -->
+        <label class="field-label" style="left:50px; top:289px; width:131px; height:26px;">YOUR MESSAGE</label>
+        <!-- Message textarea -->
+        <div class="textarea-outline" style="left:50px; top:321px; width:370px; height:110px;">
+          <textarea class="textarea-plain" aria-label="Message" placeholder="Message"></textarea>
+        </div>
+
+        <!-- Checkbox “Send me a copy” -->
+        <div class="checkbox-row" style="left:50px; top:476px; width:152px; height:26px;">
+          <button class="checkbox" type="button" aria-pressed="true" aria-label="Send me a copy">
+            <img class="checkbox-bg" src="./figmaimages/figma_image_1_532_112_1148.png" alt="">
+            <img class="checkbox-check" src="./figmaimages/figma_image_1_532_112_1126.png" alt="">
+          </button>
+          <span class="checkbox-label">Send me a copy</span>
+        </div>
+
+        <!-- Send button (Middle - Fill instance) -->
+        <button class="send-button" type="button" style="left:301px; top:464px; width:120px; height:50px;">
+          <img class="send-bg" src="./figmaimages/figma_image_1_529_7_5017.png" alt="">
+          <span class="send-text">Send</span>
+        </button>
+      </section>
+    </main>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

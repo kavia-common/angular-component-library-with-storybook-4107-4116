@@ -1,0 +1,134 @@
+:root {
+  /* Colors from design system T0038-4107-rbMTcA6JACQ7TTXMTMKf2K */
+  --ds-color-2f1893: #2f1893;
+  --ds-color-ffffff: #ffffff;
+  --ds-color-141414: #141414;
+  --ds-color-e93a7d: #e93a7d;
+  --ds-color-25dac5: #25dac5;
+  --ds-color-151439: #151439;
+  --ds-color-1e0e62: #1e0e62;
+  --ds-color-ebeaed: #ebeaed;
+  --ds-color-c4c4c4: #c4c4c4;
+  --ds-color-979797: #979797;
+  --ds-color-ea3223: #ea3223;
+  --ds-color-1da1f2: #1da1f2;
+  --ds-color-000000: #000000;
+  --ds-color-482be7: #482be7;
+
+  /* Typography tokens commonly used in this screen */
+  --typo-25-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --typo-25-size: 16px;
+  --typo-25-weight: 400;
+  --typo-25-line: 26px;
+  --typo-25-letter: 0px;
+  --typo-25-color: var(--ds-color-ffffff);
+
+  --typo-33-family: "FontAwesome";
+  --typo-33-size: 18px;
+  --typo-33-weight: 400;
+  --typo-33-line: 38px;
+  --typo-33-letter: 0px;
+  --typo-33-color: var(--ds-color-ffffff);
+
+  --typo-34-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --typo-34-size: 18px;
+  --typo-34-weight: 500;
+  --typo-34-line: 26px;
+  --typo-34-letter: 0px;
+  --typo-34-color: var(--ds-color-ffffff);
+
+  --typo-35-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --typo-35-size: 16px;
+  --typo-35-weight: 400;
+  --typo-35-line: 26px;
+  --typo-35-letter: 0px;
+  --typo-35-color: var(--ds-color-151439);
+
+  --typo-36-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --typo-36-size: 14px;
+  --typo-36-weight: 700;
+  --typo-36-line: 26px;
+  --typo-36-letter: 2px;
+  --typo-36-color: var(--ds-color-1e0e62);
+
+  --typo-37-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --typo-37-size: 18px;
+  --typo-37-weight: 500;
+  --typo-37-line: 26px;
+  --typo-37-letter: 0px;
+  --typo-37-color: var(--ds-color-151439);
+
+  --typo-38-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --typo-38-size: 18px;
+  --typo-38-weight: 500;
+  --typo-38-line: 26px;
+  --typo-38-letter: 0px;
+  --typo-38-color: var(--ds-color-1e0e62);
+
+  --typo-39-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --typo-39-size: 42px;
+  --typo-39-weight: 700;
+  --typo-39-line: 52px;
+  --typo-39-letter: -0.4px;
+  --typo-39-color: var(--ds-color-ffffff);
+
+  --typo-30-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --typo-30-size: 22px;
+  --typo-30-weight: 500;
+  --typo-30-line: 32px;
+  --typo-30-letter: 0px;
+  --typo-30-color: var(--ds-color-ffffff);
+
+  /* Radii */
+  --radius-10: 10px;
+  --radius-100: 100px;
+  --radius-40: 40px;
+
+  /* Shadow from design system */
+  --shadow-0: 0 4px 4px rgba(0,0,0,1);
+
+  /* Base canvas size for this screen for reference */
+  --screen-w: 1400px;
+  --screen-h: 770px;
+}
+
+/* Resets and base */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  font-family: var(--typo-25-family);
+  background: var(--ds-color-2f1893);
+  color: var(--ds-color-ffffff);
+}
+img { display: block; max-width: 100%; }
+.visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; }
+
+.fontawesome {
+  font-family: var(--typo-33-family), "Font Awesome 5 Free", "Font Awesome 6 Free", sans-serif;
+  font-weight: 400;
+  line-height: var(--typo-33-line);
+  color: var(--typo-33-color);
+}
+
+/* Utility for absolute positioning according to Figma coordinates */
+.abs { position: absolute; }
+.canvas {
+  position: relative;
+  width: var(--screen-w);
+  height: var(--screen-h);
+  overflow: hidden;
+  background: var(--ds-color-2f1893);
+}
+
+/* Make the screen center on page */
+.screen-wrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--ds-color-2f1893);
+}

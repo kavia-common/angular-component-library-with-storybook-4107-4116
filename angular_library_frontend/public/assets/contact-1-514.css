@@ -1,0 +1,251 @@
+.contact-screen {
+  background: var(--ds-color-2f1893);
+}
+
+/* Background rectangle (style_9: opacity 0.6 over the frame background) */
+.bg-rect {
+  opacity: 0.6; /* per style_9 */
+}
+
+/* Title styles */
+.group-title .title-text {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 410px;
+  height: 52px;
+
+  font-family: var(--typo-39-family);
+  font-size: var(--typo-39-size);
+  font-weight: var(--typo-39-weight);
+  line-height: var(--typo-39-line);
+  letter-spacing: var(--typo-39-letter);
+  color: var(--typo-39-color);
+  margin: 0;
+}
+.group-title .title-subtext {
+  position: absolute;
+  left: 1px; /* -591 vs -592 difference accounted via group container; here visually matches */
+  top: 80px;
+  width: 399px;
+  height: 128px;
+
+  font-family: var(--typo-30-family);
+  font-size: var(--typo-30-size);
+  font-weight: var(--typo-30-weight);
+  line-height: var(--typo-30-line);
+  letter-spacing: var(--typo-30-letter);
+  color: var(--typo-30-color);
+  margin: 0;
+}
+
+/* Contacts list */
+.group-contacts .contact-row,
+.group-contacts .contact-address {
+  position: absolute;
+}
+.fa-icon {
+  position: absolute;
+  font-family: var(--typo-33-family);
+  font-size: var(--typo-33-size);
+  font-weight: var(--typo-33-weight);
+  line-height: var(--typo-33-line);
+  letter-spacing: var(--typo-33-letter);
+  color: var(--typo-33-color);
+}
+.contact-text,
+.address-text {
+  position: absolute;
+  font-family: var(--typo-25-family);
+  font-size: var(--typo-25-size);
+  font-weight: var(--typo-25-weight);
+  line-height: var(--typo-25-line);
+  letter-spacing: var(--typo-25-letter);
+  color: var(--typo-25-color);
+}
+.address-text {
+  /* multi-line block matches 78px height */
+  display: block;
+  white-space: normal;
+}
+
+/* Form card */
+.form-card { position: absolute; }
+.form-card .form-bg {
+  position: absolute;
+  left: 0; top: 0;
+  width: 470px; height: 570px;
+  background: var(--ds-color-ffffff); /* style_4 background white */
+  border-radius: var(--radius-10);     /* style_4 radius 10 */
+}
+
+/* Field labels (typo_36) */
+.field-label {
+  position: absolute;
+  font-family: var(--typo-36-family);
+  font-size: var(--typo-36-size);
+  font-weight: var(--typo-36-weight);
+  line-height: var(--typo-36-line);
+  letter-spacing: var(--typo-36-letter);
+  color: var(--typo-36-color);
+}
+
+/* Outline inputs (style_15: border 2px #ebeaed, radius 100) */
+.input-outline,
+.budget-outline {
+  position: absolute;
+  border: 2px solid var(--ds-color-ebeaed);
+  border-radius: var(--radius-100);
+  background: transparent;
+}
+.input-outline.full { width: 370px; }
+
+.input-plain {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 12px 18px;
+  font-family: var(--typo-37-family);
+  font-size: var(--typo-37-size);
+  font-weight: var(--typo-37-weight);
+  line-height: var(--typo-37-line);
+  color: var(--typo-37-color);
+}
+.input-plain::placeholder {
+  color: var(--typo-37-color);
+  opacity: 1;
+}
+
+/* Textarea block (style_16: white bg, 2px #ebeaed border, radius 10) */
+.textarea-outline {
+  position: absolute;
+  background: var(--ds-color-ffffff);
+  border: 2px solid var(--ds-color-ebeaed);
+  border-radius: var(--radius-10);
+}
+.textarea-plain {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 12px 16px;
+  font-family: var(--typo-37-family);
+  font-size: var(--typo-37-size);
+  font-weight: var(--typo-37-weight);
+  line-height: var(--typo-37-line);
+  color: var(--typo-37-color);
+}
+.textarea-plain::placeholder {
+  color: var(--typo-37-color);
+  opacity: 1;
+}
+
+/* Budget field: show provided background image; overlay text and chevron */
+.budget-bg {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  border-radius: var(--radius-100);
+}
+.budget-text {
+  position: absolute;
+  left: 24px; top: 12px;
+  font-family: var(--typo-38-family);
+  font-size: var(--typo-38-size);
+  font-weight: var(--typo-38-weight);
+  line-height: var(--typo-38-line);
+  color: var(--typo-38-color);
+}
+.budget-carat {
+  position: absolute;
+  right: 18px; top: 50%;
+  width: 12px; height: 8px;
+  transform: translateY(-50%);
+}
+.budget-carat::before, .budget-carat::after {
+  content: "";
+  position: absolute;
+  width: 7.071px;
+  height: 7.071px;
+  background: var(--ds-color-c4c4c4); /* style_17 */
+  transform-origin: center;
+}
+.budget-carat::before {
+  left: 0px; top: 0px;
+  transform: rotate(45deg);
+}
+.budget-carat::after {
+  left: 4px; top: 1px;
+  transform: rotate(-45deg);
+}
+.budget-hit {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Checkbox (On component) */
+.checkbox-row { position: absolute; display: flex; align-items: center; gap: 8px; }
+.checkbox {
+  position: relative;
+  width: 20px; height: 20px;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.checkbox-bg {
+  position: absolute; left: 0; top: 0; width: 20px; height: 20px;
+}
+.checkbox-check {
+  position: absolute; left: 6px; top: 8px; width: 8px; height: 5px;
+}
+.checkbox-label {
+  font-family: var(--typo-35-family);
+  font-size: var(--typo-35-size);
+  font-weight: var(--typo-35-weight);
+  line-height: var(--typo-35-line);
+  color: var(--typo-35-color);
+}
+
+/* Send button (Middle - Fill) */
+.send-button {
+  position: absolute;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  width: 120px; height: 50px;
+}
+.send-bg {
+  position: absolute; left: 0; top: 0; width: 120px; height: 50px;
+  border-radius: var(--radius-100);
+}
+.send-text {
+  position: absolute;
+  left: 38px; top: 12px; /* centers 44px text height 26px within 50px */
+  width: 44px; height: 26px;
+  font-family: var(--typo-34-family);
+  font-size: var(--typo-34-size);
+  font-weight: var(--typo-34-weight);
+  line-height: var(--typo-34-line);
+  color: var(--typo-34-color);
+}
+
+/* Contact texts */
+.contact-text { white-space: nowrap; }
+.contact-address .address-text { white-space: normal; }
+
+/* Ensure pixel-accurate font rendering spacing */
+.contact-screen, .contact-screen * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
