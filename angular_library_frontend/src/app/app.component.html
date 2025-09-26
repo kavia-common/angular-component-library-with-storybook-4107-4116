@@ -1,3 +1,20 @@
-<div class="container">
-  <h1>{{ title }}</h1>
+<div class="wrapper">
+  <header class="hero">
+    <h1>Ocean UI Library</h1>
+    <p>Modern, reusable Angular components with the Ocean Professional theme.</p>
+  </header>
+
+  <section class="demo">
+    <ocean-card title="Live Preview" subtitle="Embedded components" [hasFooter]="true">
+      <div style="display:flex; gap: 12px; align-items:center; flex-wrap: wrap;">
+        <ocean-button (pressed)="onPressed('Primary')">Primary</ocean-button>
+        <ocean-button variant="secondary" (pressed)="onPressed('Secondary')">Secondary</ocean-button>
+        <ocean-button [loading]="true">Loading</ocean-button>
+        <ocean-button [block]="true">Block</ocean-button>
+      </div>
+      <div card-footer>
+        <small>Try Storybook for more controls and docs.</small>
+      </div>
+    </ocean-card>
+  </section>
 </div>

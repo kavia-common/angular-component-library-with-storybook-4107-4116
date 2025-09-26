@@ -27,6 +27,7 @@ export default [
         expect: "readonly",
         // Browser globals
         HTMLElement: "readonly",
+        MouseEvent: "readonly",
         // Node.js globals
         process: "readonly",
         console: "readonly"

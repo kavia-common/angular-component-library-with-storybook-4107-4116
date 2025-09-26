@@ -1,0 +1,20 @@
+{
+  "name": "@ocean/ui",
+  "version": "0.0.1",
+  "description": "Ocean Professional themed Angular component library",
+  "private": false,
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "19.2.0",
+    "@angular/core": "19.2.0"
+  },
+  "sideEffects": false,
+  "typings": "dist/types/public-api.d.ts",
+  "module": "dist/esm2022/ocean-ui.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/types/public-api.d.ts",
+      "esm2022": "./dist/esm2022/ocean-ui.mjs"
+    }
+  }
+}

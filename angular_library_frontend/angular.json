@@ -101,6 +101,20 @@
           }
         }
       }
+    },
+    "ocean-ui": {
+      "projectType": "library",
+      "root": "projects/ocean-ui",
+      "sourceRoot": "projects/ocean-ui/src",
+      "prefix": "ocean",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ocean-ui/ng-package.json"
+          }
+        }
+      }
     }
   },
   "cli": {
