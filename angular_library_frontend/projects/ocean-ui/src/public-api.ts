@@ -8,3 +8,4 @@ export * from './lib/theme/ocean-theme';
 export * from './lib/ocean-ui.module';
 export * from './lib/button/ocean-button.component';
 export * from './lib/card/ocean-card.component';
+export * from './lib/pricing-table/ocean-pricing-table.component';
