@@ -1,6 +1,9 @@
 /* eslint-disable no-undef */
 /* global document */
 import type { Preview } from '@storybook/angular';
+import { applicationConfig } from '@storybook/angular';
+import { OCEAN_THEME } from '../projects/ocean-ui/src/lib/theme/ocean-theme.tokens';
+import { defaultOceanTheme } from '../projects/ocean-ui/src/lib/theme/ocean-theme';
 
 const themeVars = `
 :root {
@@ -38,7 +41,12 @@ const preview: Preview = {
     (storyFunc) => {
       injectThemeVars();
       return storyFunc();
-    }
+    },
+    applicationConfig({
+      providers: [
+        { provide: OCEAN_THEME, useValue: defaultOceanTheme }
+      ]
+    })
   ],
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },

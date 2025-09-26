@@ -5,8 +5,8 @@
   "private": false,
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "19.2.0",
-    "@angular/core": "19.2.0"
+    "@angular/common": "19.2.1",
+    "@angular/core": "19.2.1"
   },
   "sideEffects": false,
   "typings": "dist/types/public-api.d.ts",
