@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:angular": "node dist/angular/server/server.mjs",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "storybook": "node ./node_modules/@storybook/cli/bin/index.js dev -p 6006",
+    "build-storybook": "node ./node_modules/@storybook/cli/bin/index.js build",
     "build:ocean-ui": "ng build ocean-ui"
   },
   "private": true,
@@ -32,17 +32,15 @@
     "@angular-devkit/build-angular": "19.2.1",
     "@angular/cli": "19.2.1",
     "@angular/compiler-cli": "19.2.1",
-    "@storybook/angular": "8.4.0-alpha.3",
+    "@eslint/js": "9.24.0",
+    "@storybook/addon-a11y": "8.4.0-alpha.3",
     "@storybook/addon-essentials": "8.4.0-alpha.3",
     "@storybook/addon-interactions": "8.4.0-alpha.3",
-    "@storybook/addon-a11y": "8.4.0-alpha.3",
     "@storybook/addon-themes": "8.4.0-alpha.3",
+    "@storybook/angular": "8.4.0-alpha.3",
+    "@storybook/core-common": "8.4.0-alpha.3",
     "@storybook/test": "8.4.0-alpha.3",
     "@storybook/types": "8.4.0-alpha.3",
-    "@storybook/core-common": "8.4.0-alpha.3",
-    "ng-packagr": "18.2.1",
-    "typescript": "5.7.2",
-    "@eslint/js": "9.24.0",
     "@types/express": "4.17.17",
     "@types/jasmine": "5.1.0",
     "@types/node": "18.18.0",
@@ -53,6 +51,9 @@
     "karma-chrome-launcher": "3.2.0",
     "karma-coverage": "2.2.0",
     "karma-jasmine": "5.1.0",
-    "karma-jasmine-html-reporter": "2.1.0"
+    "karma-jasmine-html-reporter": "2.1.0",
+    "ng-packagr": "18.2.1",
+    "storybook": "@storybook/cli@8.4.0-alpha.3",
+    "typescript": "5.7.2"
   }
 }
