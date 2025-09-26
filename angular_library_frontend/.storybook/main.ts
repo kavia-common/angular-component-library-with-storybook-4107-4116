@@ -2,24 +2,24 @@ import type { StorybookConfig } from '@storybook/angular';
 
 const config: StorybookConfig = {
   stories: [
-    '../projects/ocean-ui/**/*.stories.@(ts|mdx)',
-    '../src/**/*.stories.@(ts|mdx)'
+    '../src/**/*.stories.@(ts|mdx)',
+    '../projects/**/*.stories.@(ts|mdx)'
   ],
   addons: [
     '@storybook/addon-essentials',
-    '@storybook/addon-interactions',
     '@storybook/addon-a11y',
+    '@storybook/addon-interactions',
     '@storybook/addon-themes'
   ],
+  core: {
+    disableTelemetry: true
+  },
   framework: {
     name: '@storybook/angular',
     options: {}
   },
   docs: {
-    defaultName: 'Documentation'
-  },
-  core: {
-    disableTelemetry: true
+    defaultName: 'Docs'
   }
 };
 
