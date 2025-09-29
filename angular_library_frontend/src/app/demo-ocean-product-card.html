@@ -1,0 +1,17 @@
+<div style="display:flex; gap:16px; flex-wrap: wrap;">
+  <ocean-product-card
+    imageSrc="assets/ocean-product.png"
+    name="Trendy House Plant"
+    subtitle="Calathea plant"
+    price="Rs. 599/-"
+    (addToCart)="onPressed('Add to cart: Trendy House Plant')"
+  ></ocean-product-card>
+
+  <ocean-product-card
+    imageSrc="assets/ocean-product.png"
+    name="Desk plant"
+    subtitle="Compact office greenery"
+    price="Rs. 359/-"
+    [showCartButton]="false"
+  ></ocean-product-card>
+</div>

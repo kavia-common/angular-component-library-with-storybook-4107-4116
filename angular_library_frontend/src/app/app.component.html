@@ -6,15 +6,24 @@
 
   <section class="demo">
     <div style="background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 2px rgba(0,0,0,0.06);">
-      <h3 style="margin-bottom:8px;">Live Preview (placeholder)</h3>
-      <div style="display:flex; gap: 12px; align-items:center; flex-wrap: wrap;">
+      <h3 style="margin-bottom:8px;">Live Preview</h3>
+      <div style="display:flex; gap: 12px; align-items:center; flex-wrap: wrap; margin-bottom:12px;">
         <button style="background:#2563EB;color:#fff;border:none;border-radius:8px;padding:8px 12px;cursor:pointer" (click)="onPressed('Primary')">Primary</button>
         <button style="background:#F59E0B;color:#111827;border:none;border-radius:8px;padding:8px 12px;cursor:pointer" (click)="onPressed('Secondary')">Secondary</button>
         <button disabled style="background:#93c5fd;color:#1f2937;border:none;border-radius:8px;padding:8px 12px;">Loading</button>
         <button style="background:#2563EB;color:#fff;border:none;border-radius:8px;padding:8px 12px;min-width:200px;cursor:pointer">Block</button>
       </div>
-      <div style="margin-top:8px;">
-        <small>Storybook provides controls and docs once the library is implemented.</small>
+
+      <h4 style="margin: 8px 0;">Ocean Product Card</h4>
+      <div>
+        <!-- Inline demo for visibility from entrypoint -->
+        <ocean-product-card
+          imageSrc="assets/ocean-product.png"
+          name="Trendy House Plant"
+          subtitle="Calathea plant"
+          price="Rs. 599/-"
+          (addToCart)="onPressed('Add to cart: Trendy House Plant')"
+        ></ocean-product-card>
       </div>
     </div>
   </section>
