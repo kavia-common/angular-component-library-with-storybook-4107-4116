@@ -5,26 +5,17 @@
   </header>
 
   <section class="demo">
-    <ocean-card title="Live Preview" subtitle="Embedded components" [hasFooter]="true">
+    <div style="background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 2px rgba(0,0,0,0.06);">
+      <h3 style="margin-bottom:8px;">Live Preview (placeholder)</h3>
       <div style="display:flex; gap: 12px; align-items:center; flex-wrap: wrap;">
-        <ocean-button (pressed)="onPressed('Primary')">Primary</ocean-button>
-        <ocean-button variant="secondary" (pressed)="onPressed('Secondary')">Secondary</ocean-button>
-        <ocean-button [loading]="true">Loading</ocean-button>
-        <ocean-button [block]="true">Block</ocean-button>
+        <button style="background:#2563EB;color:#fff;border:none;border-radius:8px;padding:8px 12px;cursor:pointer" (click)="onPressed('Primary')">Primary</button>
+        <button style="background:#F59E0B;color:#111827;border:none;border-radius:8px;padding:8px 12px;cursor:pointer" (click)="onPressed('Secondary')">Secondary</button>
+        <button disabled style="background:#93c5fd;color:#1f2937;border:none;border-radius:8px;padding:8px 12px;">Loading</button>
+        <button style="background:#2563EB;color:#fff;border:none;border-radius:8px;padding:8px 12px;min-width:200px;cursor:pointer">Block</button>
       </div>
-      <div card-footer>
-        <small>Try Storybook for more controls and docs.</small>
+      <div style="margin-top:8px;">
+        <small>Storybook provides controls and docs once the library is implemented.</small>
       </div>
-    </ocean-card>
-  </section>
-
-  <!-- Pricing Table Integration -->
-  <section style="margin-top: 2rem;">
-    <ocean-pricing-table></ocean-pricing-table>
-  </section>
-
-  <!-- Contact Integration -->
-  <section style="margin-top: 2rem;">
-    <ocean-contact></ocean-contact>
+    </div>
   </section>
 </div>
